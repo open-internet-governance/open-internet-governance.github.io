@@ -1,0 +1,39 @@
+/* Webfont: Equity-Regular */
+
+@font-face {
+    font-family: 'equity_text';
+    src: url('/lib/fonts/Equity/equity_b_regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'equity_text';
+    src: url('/lib/fonts/Equity/equity_a_italic.woff2') format('woff2');
+    font-style: italic;
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'equity_text';
+    src: url('/lib/fonts/Equity/equity_a_bold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'equity_text';
+    src: url('/lib/fonts/Equity/equity_a_bold_italic.woff2') format('woff2');
+    font-style: italic;
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'equity_caps';
+    src: url('/lib/fonts/Equity/equity_a_caps_regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}

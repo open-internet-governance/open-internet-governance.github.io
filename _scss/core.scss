@@ -1,0 +1,114 @@
+
+html {
+    background-color: #FDFEF9;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+#main {
+    margin: 4em;
+    max-width: 690px;
+    font-family: equity_text, "Times New Roman", Times, serif;
+    font-size: 15pt;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-feature-settings: "liga" 1, "dlig" 1, "kern" 1, "frac" 0;
+    hyphens: auto;
+    hyphenate-limit-chars: 10 8 8;
+    -webkit-hyphenate-limit-before: 8; /* For Safari */
+    -webkit-hyphenate-limit-after: 8; /* For Safari */
+}
+
+h1 {
+    font-family: equity_caps, "Times New Roman", Times, serif;
+    text-wrap: balance;
+    line-height: 1em;
+}
+
+@media print {
+  html {
+    background-color: white;
+    width: 100%;
+    margin: 10pt;
+    padding: 0;
+    height: 95%;
+  }
+  #main {
+    font-size: 10pt;
+    line-height: 14pt;
+    color: black;
+  }
+  .warning {
+      background-color: black;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+  }
+}
+
+footer {
+    margin: 0 5em;
+    max-width: 680px;
+    min-height: 50px;
+}
+
+footer p {
+    font-family: equity_caps, "Times New Roman", Times, serif;
+}
+
+.intro {
+    font-size: 1.25em;
+    line-height: 1.25;
+    font-weight: 300;
+    page-break-inside: avoid;
+}
+
+.warning {
+    color: white;
+    background-color: red;
+    padding: 0.5em;
+}
+
+ul.siglist {
+    list-style: none;
+    padding-left: 0em;
+    text-indent: -20px; 
+    margin-left: 20px;
+}
+
+ul.siglist li {
+    break-inside: avoid-column;
+}
+
+ul.siglist em {
+    padding-left: 0.5em;
+    font-family: equity_caps, "Times New Roman", Times, serif;
+    font-size: .7em;
+    line-height: .7;
+    font-style: normal;
+}
+
+.twocol {
+    columns: 2;
+    column-gap: 2em;
+}
+
+hr {
+    border-top: 1px solid #aaa;
+    width: 30%;
+    margin: 0;
+}
+
+@media screen and (max-width: 780px) {
+  #main {
+      margin: 1em;
+  }
+  .twocol {
+      columns: 1;
+  }
+}

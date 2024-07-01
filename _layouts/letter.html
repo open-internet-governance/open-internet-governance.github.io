@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ page.title | strip_html }}</title>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Open Internet Governance">
+    <meta name="author" content="">
+    <meta property="og:title" content="{{ page.title | strip_html }}">
+    {% if page.description %}
+    <meta property="og:description" content="{{ page.description | strip_html }}">
+    {% else %}
+    <meta property="og:description" content="{{ page.excerpt | strip_html }}">
+    {% endif %}
+    <meta property="og:url" content="{{ site.url_base }}{{ page.url }}">
+    {% if page.image %}
+    <meta property="og:image" content="{{ site.url_base }}{{ page.image }}">
+    <meta name="twitter:card" content="summary_large_image">
+    {% else %}
+    <meta property="og:image" content="{{ site.url_base }}{{ site.image }}">
+    <meta name="twitter:card" content="summary">
+    {% endif %}
+</head>
+
+<body>
+
+  <div id="main">
+    <h1>{{ page.title }}</h1>
+    {{ content }}
+  </div>
+
+</body>
+
+<footer>
+    <p><a href="/press-release">press information</a></p>
+</footer>
+
+</html>

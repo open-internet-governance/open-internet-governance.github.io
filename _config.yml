@@ -1,0 +1,18 @@
+---
+encoding: "utf-8"
+
+url_base: "https://open-internet-governance.org/"
+image: "plain.png"
+
+keep_files:
+  - ".gzip"
+  - ".brotli"
+# incremental: true
+
+
+exclude:
+  - Makefile
+  
+  
+sass:
+    sass_dir: _scss  
